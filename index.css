@@ -15,3 +15,6 @@ footer
     color: mediumvioletred;
     background-color: azure;
 }
+table, th, td {
+        border: 1px solid black;
+      }
