@@ -1,6 +1,8 @@
 
 body {
-    background-color: white;
+    background-color: #ffffff;
+    background-image:url("Bg4.jpg");
+    background-size: 1920px;
 }
 
 div0
@@ -10,7 +12,6 @@ div0
     background-color: royalblue;
     
 }
-
 footer
 {
     color: mediumvioletred;
@@ -20,8 +21,11 @@ footer
         border: 1px solid black;
         border-color: red;
       }
-
-      aside {
+.attributes
+{
+  float:left;
+}
+      .points {
         width: 50%%;
         padding-left: 15px;
         margin-left: 15px;
@@ -37,4 +41,24 @@ footer
   margin: 25px;
   margin-right: 100px;
   margin-left: 650px;
+  background-color: lightblue;
+}
+.attributes
+{
+  font-size: 40px;
+  font-style: oblique;
+  background-color: salmon;
+}
+.next
+{
+  float:right;
+  background-color: silver;
+  padding-left: 50px;
+  padding-right: 50px;
+padding-bottom: 50px;
+}
+iframe
+{
+  float:right;
+  padding-left: 100px;
 }
