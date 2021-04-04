@@ -1,0 +1,144 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<title>SCHEDULE</title>
+<body>    
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Enter Your Favourite Team" title="Type in English">
+<br>
+<table id="myTable">
+ <thead>
+    <tr class="header">
+     <th>Date</th>
+     <th>Match</th>
+ </thead>
+    <tr>
+    <td>9/04/2021</td>
+    <td>Mumbai Indians vs Royal Challengers Bangalore, 1st Match</td>
+  </tr>
+  <tr>
+    <td>10/04/2021</td>
+    <td>Chennai Super Kings vs Delhi Capitals, 2nd Match</td>
+  </tr>
+  <tr>
+    <td>11/04/2021</td>
+    <td>Sunrisers Hyderabad vs Kolkata Knight Riders, 3rd Match</td>
+  </tr>
+  <tr>
+    <td>12/04/2021</td>
+    <td>Rajasthan Royals vs Punjab Kings, 4th Match</td>
+  </tr>
+  <tr>
+    <td>13/04/2021</td>
+    <td>Kolkata Knight Riders vs Mumbai Indians, 5th Match</td>
+  </tr>
+  <tr>
+    <td>14/04/2021</td>
+    <td>Sunrisers Hyderabad vs Royal Challengers Bangalore, 6th Match</td>
+  </tr>
+  <tr>
+    <td>15/04/2021</td>
+    <td>Rajasthan Royals vs Delhi Capitals, 7th Match</td>
+  </tr>
+  <tr>
+    <td>16/04/2021</td>
+    <td>Punjab Kings vs Chennai Super Kings, 8th Match</td>
+  </tr>
+  <tr>
+    <td>17/04/2021</td>
+    <td>Mumbai Indians vs Sunrisers Hyderabad, 9th Match</td>
+  </tr>
+  <tr>
+    <td>18/04/2021</td>
+    <td>Royal Challengers Bangalore vs Kolkata Knight Riders, 10th Match,Afternoon Match</td>
+    </tr>
+    <tr>
+        <td>18/04/2021</td>
+    <td>Delhi Capitals vs Punjab Kings, 11th Match,Night Match</td>  
+</tr>
+
+
+  <tr>
+    <td>19/04/2021</td>
+    <td>Chennai Super Kings vs Rajasthan Royals, 12th Match</td>
+  </tr>
+  <tr>
+    <td>20/04/2021</td>
+    <td>Delhi Capitals vs Mumbai Indians, 13th Match</td>
+  </tr>
+  <tr>
+    <td>21/04/2021</td>
+    <td>Punjab Kings vs Sunrisers Hyderabad, 14th Match Afternoon Match</td>
+  </tr>
+  <td>21/04/2021</td>
+  <td>Kolkata Knight Riders vs Chennai Super Kings, 15th Match Night Match</td>
+</tr>
+
+  <tr>
+    <td>22/04/2021</td>
+    <td>Royal Challengers Bangalore vs Rajasthan Royals, 16th Match</td>
+  </tr>
+  <tr>
+    <td>23/04/2021</td>
+    <td>Punjab Kings vs Mumbai Indians, 17th Match</td>
+  </tr>
+  <tr>
+    <td>24/04/2021</td>
+    <td>Rajasthan Royals vs Kolkata Knight Riders, 18th Match</td>
+  </tr>
+  <tr>
+    <td>25/04/2021</td>
+    <td>Chennai Super Kings vs Royal Challengers Bangalore, 19th Match Afternoon Match</td>
+  </tr>
+  <tr>
+    <td>25/04/2021</td>
+    <td>Sunrisers Hyderabad vs Delhi Capitals, 20th Match Evening Match</td>
+  </tr>
+  <tr>
+    <td>26/04/2021</td>
+    <td>Punjab Kings vs Kolkata Knight Riders, 21st Match</td>
+  </tr>
+  <tr>
+    <td>27/04/2021</td>
+    <td>Delhi Capitals vs Royal Challengers Bangalore, 22nd Match</td>
+  </tr>
+  <tr>
+    <td>28/04/2021</td>
+    <td>Chennai Super Kings vs Sunrisers Hyderabad, 23rd Match</td>
+  </tr>
+  <tr>
+    <td>29/04/2021</td>
+    <td>Mumbai Indians vs Rajasthan Royals, 24th Match Afternoon Match</td>
+  </tr>
+  <td>29/04/2021</td>
+    <td>Delhi Capitals vs Kolkata Knight Riders, 25th Match Evening Match</td>
+  </tr>
+  <tr>
+    <td>30/04/2021</td>
+    <td>Punjab Kings vs Royal Challengers Bangalore, 26th Match</td>
+  </tr>
+ 
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+</body>
+</html>
